@@ -1,0 +1,10 @@
+service level1
+{
+	disable		= no
+	flags		= REUSE
+	socket_type	= stream
+	protocol	= tcp
+	wait		= no
+	user		= level1
+	server		= /home/pwn/level1/bof1
+}
