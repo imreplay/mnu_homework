@@ -14,6 +14,7 @@ int main(int argc, char const *argv[]){
    {
         printf("Good Skill!\n");
         printf("Answer is FLAG{Network_security_is_So_Fun!}\n");
+        fflush(stdout);
    }
 
 }
