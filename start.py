@@ -14,6 +14,7 @@ os.system("chown :level1 /home/pwn/level1/bof1;chmod 111 /home/pwn/level1/bof1")
 os.system("apt-get install xinetd -y")
 #move level
 os.system("cp ./xinetd_files/level1 /etc/xinetd.d/level1")
+os.system("service xinetd restart")
 
 #enable local service
 os.system('echo "level1 4001/tcp" >> /etc/services')
