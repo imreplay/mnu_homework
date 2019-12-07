@@ -4,8 +4,7 @@ import os
 #run as root
 
 #adduser level1-level4
-for i in range(1,5):
-    os.system("adduser --disabled-login  --home /home/pwn/level{} --uid 400{} --gecos ''  level{}".format(i,i,i))
+os.system("adduser --disabled-login  --home /home/pwn/level1 --uid 4001 --gecos ''  level1")
 
 #level file setting
 os.system("cp ./prov/bof1* /home/pwn/level1/")
